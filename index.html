@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>창가의 오후 | 베이커리 카페</title>
+  <meta name="description" content="퇴근길에 들러 할 일을 마무리하는, 따뜻하고 조용한 베이커리 카페.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Gowun+Dodum&family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="theme.js"></script>
+</head>
+<body>
+
+  <!-- 색연필 질감 -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <filter id="pencil">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="2.2"/>
+    </filter>
+  </svg>
+
+  <header>
+    <div class="wrap">
+      <a href="index.html" class="logo">창가의 <span>오후</span></a>
+      <div class="header-right">
+        <nav>
+          <a href="index.html" class="current">첫 화면</a>
+          <a href="menu.html">메뉴판</a>
+          <a href="subscribe.html">소식받기</a>
+        </nav>
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="다크 모드로 바꾸기">🌙</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- 첫 인사 -->
+  <section class="hero">
+    <div class="wrap">
+      <p class="hello">오늘 하루도 수고하셨어요</p>
+      <h1>창가의 오후</h1>
+      <p class="tagline">퇴근길에 들러 할 일을 마무리하는,<br>따뜻하고 조용한 베이커리 카페.</p>
+
+      <svg class="window" viewBox="0 0 180 150" filter="url(#pencil)" aria-hidden="true">
+        <rect x="20" y="10" width="140" height="100" rx="6" fill="#fff3d6" stroke="#8a6a52" stroke-width="3"/>
+        <line x1="90" y1="10" x2="90" y2="110" stroke="#8a6a52" stroke-width="3"/>
+        <line x1="20" y1="60" x2="160" y2="60" stroke="#8a6a52" stroke-width="3"/>
+        <circle cx="130" cy="34" r="12" fill="#f2c27b"/>
+        <rect x="10" y="110" width="160" height="10" rx="3" fill="#c8925a"/>
+        <path d="M48 110 q0 -20 22 -20 h-0 q22 0 22 20z" fill="#d9a466" stroke="#8a6a52" stroke-width="2"/>
+        <rect x="108" y="94" width="20" height="16" rx="3" fill="#fffaf1" stroke="#8a6a52" stroke-width="2"/>
+        <path d="M128 98 q8 0 8 6 q0 6 -8 6" fill="none" stroke="#8a6a52" stroke-width="2"/>
+        <path d="M114 88 q3 -5 0 -10 M121 88 q3 -5 0 -10" stroke="#c8925a" stroke-width="1.8" fill="none"/>
+      </svg>
+
+      <div>
+        <a href="menu.html" class="btn">메뉴 보러가기</a>
+        <a href="#hours" class="btn ghost">영업시간</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 시작 이야기 -->
+  <section class="story">
+    <div class="wrap">
+      <div>
+        <p class="label">우리가 빵을 굽는 이유</p>
+        <h2>입이 심심할 때,<br>배까지 채워주는 빵 한 조각</h2>
+        <p>빵은 종류가 다양하고 맛있고, 그 자체로 훌륭한 간식이에요. 굽는 냄새는 언제 맡아도 좋고, 커피와도 정말 잘 어울리죠.</p>
+        <div class="promise-box">
+          <strong>재료에는 아끼지 않고,</strong> 인테리어는 화려함 대신 편안함에 집중했어요.
+          고급스러운 맛을 부담 없는 가격에 드리고 싶어서요.
+        </div>
+      </div>
+      <blockquote>
+        편안한 곳에서<br>
+        맛있고 좋은 빵과 고급스러운 커피를 내고,<br>
+        행복한 시간을 선물하고 싶었어요.
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- 공간의 분위기 -->
+  <section>
+    <div class="wrap">
+      <p class="label">문을 열면</p>
+      <h2>눈도, 코도, 귀도 편안한 곳</h2>
+      <figure class="space-photo">
+        <img src="images/interior.jpg" alt="오후 햇살이 드는 창가 원목 테이블 위의 커피 한 잔" loading="lazy">
+        <figcaption>오후의 햇살이 머무는 창가 자리</figcaption>
+      </figure>
+      <div class="senses">
+        <div class="sense">
+          <svg class="icon" viewBox="0 0 52 52" filter="url(#pencil)" aria-hidden="true">
+            <path d="M6 26 q20 -20 40 0 q-20 20 -40 0z" fill="#fff3d6" stroke="#8a6a52" stroke-width="2.5"/>
+            <circle cx="26" cy="26" r="8" fill="#6e7a3c"/>
+            <circle cx="28" cy="24" r="2.5" fill="#fffaf1"/>
+          </svg>
+          <h3>보이는 것</h3>
+          <ul>
+            <li>푹신한 소파 자리</li>
+            <li>함께 앉는 긴 원목 테이블</li>
+            <li>색연필로 그린 빵 그림 메뉴판</li>
+            <li>눈이 편안한 조명</li>
+          </ul>
+        </div>
+        <div class="sense">
+          <svg class="icon" viewBox="0 0 52 52" filter="url(#pencil)" aria-hidden="true">
+            <rect x="12" y="24" width="24" height="20" rx="4" fill="#fffaf1" stroke="#8a6a52" stroke-width="2.5"/>
+            <path d="M36 28 q8 0 8 7 q0 7 -8 7" fill="none" stroke="#8a6a52" stroke-width="2.5"/>
+            <path d="M18 20 q4 -6 0 -12 M25 20 q4 -6 0 -12 M32 20 q4 -6 0 -12" stroke="#c8925a" stroke-width="2.2" fill="none"/>
+          </svg>
+          <h3>나는 냄새</h3>
+          <ul>
+            <li>아침엔 갓 내린 커피 향</li>
+            <li>아침 식사빵 굽는 냄새</li>
+            <li>저녁엔 가게 가득한 빵 냄새</li>
+          </ul>
+        </div>
+        <div class="sense">
+          <svg class="icon" viewBox="0 0 52 52" filter="url(#pencil)" aria-hidden="true">
+            <path d="M20 38 V12 l18 -4 v26" fill="none" stroke="#8a6a52" stroke-width="2.5"/>
+            <ellipse cx="15" cy="38" rx="6" ry="4.5" fill="#6e7a3c"/>
+            <ellipse cx="33" cy="34" rx="6" ry="4.5" fill="#6e7a3c"/>
+          </svg>
+          <h3>들리는 소리</h3>
+          <ul>
+            <li>잔잔한 클래식</li>
+            <li>커피 내리는 소리</li>
+            <li>빵 굽는 소리</li>
+            <li>낮은 목소리의 편안한 대화</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 단골 이야기 -->
+  <section class="regular">
+    <div class="wrap">
+      <p class="label">이런 분들이 찾아와요</p>
+      <p class="scene">
+        평일 저녁, 조금 지친 얼굴로 문을 열어요.<br>
+        늘 앉는 창가 자리에 따뜻한 라떼와 올리브 치아바타를 두고<br>
+        퇴근 후 남은 일을 마무리하거나 책을 읽어요.
+      </p>
+      <p class="quote">"집에 가면 늘어지니까요."</p>
+      <p class="sub">집과 회사 사이, 하루를 정리하는 곳. 주말엔 프렌치토스트를 나눠 먹는 연인들도 와요.</p>
+    </div>
+  </section>
+
+  <!-- 대표 메뉴 맛보기 -->
+  <section>
+    <div class="wrap">
+      <div class="menu-head">
+        <div>
+          <p class="label">사장님이 반한 빵만 굽습니다</p>
+          <h2>대표 메뉴</h2>
+        </div>
+        <p><a href="menu.html" class="more-link">전체 메뉴 보기 →</a></p>
+      </div>
+      <div class="menu-grid">
+
+        <article class="card">
+          <div class="art photo">
+            <img src="images/olive-ciabatta.jpg" alt="따뜻하게 데운 올리브 치아바타" loading="lazy">
+            <svg class="sticker" viewBox="0 0 190 140" filter="url(#pencil)" aria-hidden="true">
+              <ellipse cx="95" cy="112" rx="78" ry="10" fill="#efe2cb"/>
+              <path d="M24 92 q-6 -46 40 -50 h62 q46 4 40 50 q-2 14 -20 14 h-102 q-18 0 -20 -14z" fill="#e2b77a" stroke="#8a6a52" stroke-width="2.5"/>
+              <path d="M44 56 q30 -8 60 2 M84 50 q30 -6 58 6" stroke="#f3dbb0" stroke-width="3" fill="none"/>
+              <g fill="#6e7a3c">
+                <ellipse cx="52" cy="76" rx="6" ry="4.5"/><ellipse cx="78" cy="88" rx="6" ry="4.5"/>
+                <ellipse cx="100" cy="70" rx="6" ry="4.5"/><ellipse cx="126" cy="86" rx="6" ry="4.5"/>
+                <ellipse cx="146" cy="72" rx="6" ry="4.5"/><ellipse cx="66" cy="98" rx="5" ry="4"/>
+                <ellipse cx="112" cy="98" rx="5" ry="4"/>
+              </g>
+              <path d="M70 34 q4 -8 0 -16 M95 32 q4 -8 0 -16 M120 34 q4 -8 0 -16" stroke="#c8925a" stroke-width="2" fill="none"/>
+            </svg>
+          </div>
+          <div class="body">
+            <h3>올리브 치아바타</h3>
+            <p class="price">4,500원</p>
+            <p class="story-line">치아바타를 안 좋아하던 제가, 배불러도 한 개를 넘게 먹었던 빵이에요.</p>
+            <p class="desc">겉은 바삭, 속은 쫄깃 촉촉. 올리브를 듬뿍 넣고 따뜻하게 데워 드려요.</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="art photo">
+            <img src="images/french-toast.jpg" alt="메이플 시럽과 딸기를 올린 프렌치토스트와 아이스 아메리카노" loading="lazy">
+            <svg class="sticker" viewBox="0 0 190 140" filter="url(#pencil)" aria-hidden="true">
+              <ellipse cx="95" cy="114" rx="76" ry="12" fill="#fffaf1" stroke="#d8c6a8" stroke-width="2"/>
+              <rect x="42" y="66" width="86" height="40" rx="10" fill="#e8b46e" stroke="#8a6a52" stroke-width="2.5"/>
+              <rect x="62" y="48" width="86" height="40" rx="10" fill="#f0c482" stroke="#8a6a52" stroke-width="2.5"/>
+              <path d="M70 52 q30 14 70 0 q-4 22 -10 30" fill="#b9732f" opacity="0.55"/>
+              <path d="M96 40 q8 -14 18 -2 q-2 12 -9 14 q-8 -2 -9 -12z" fill="#c9605a" stroke="#8a6a52" stroke-width="1.8"/>
+              <path d="M104 30 l-2 -7 M104 30 l6 -5" stroke="#6e7a3c" stroke-width="2.5"/>
+              <circle cx="128" cy="44" r="7" fill="#c9605a" stroke="#8a6a52" stroke-width="1.6"/>
+              <circle cx="80" cy="46" r="6" fill="#7a5aa6" stroke="#8a6a52" stroke-width="1.6"/>
+            </svg>
+          </div>
+          <div class="body">
+            <h3>프렌치토스트 + 아메리카노</h3>
+            <p class="price">9,900원</p>
+            <p class="story-line">가성비 최고, 가장 많이 사랑받는 세트예요.</p>
+            <p class="desc">두툼하고 부드러운 토스트에 메이플 시럽과 딸기를 올렸어요. 커피는 HOT/ICE 중에 골라 주세요.</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="art photo">
+            <img src="images/mentaiko-baguette.jpg" alt="명란을 듬뿍 올린 명란바게트와 라떼" loading="lazy">
+            <svg class="sticker" viewBox="0 0 190 140" filter="url(#pencil)" aria-hidden="true">
+              <ellipse cx="95" cy="110" rx="80" ry="10" fill="#efe2cb"/>
+              <path d="M18 88 q-6 -22 22 -32 l110 -26 q30 -4 30 18 q0 18 -22 26 l-112 30 q-24 6 -28 -16z" fill="#dca866" stroke="#8a6a52" stroke-width="2.5"/>
+              <g stroke="#8a6a52" stroke-width="2" fill="#f1a39a">
+                <path d="M44 64 q10 18 24 18 q-4 -14 -24 -18z"/>
+                <path d="M80 54 q10 18 24 18 q-4 -14 -24 -18z"/>
+                <path d="M116 45 q10 18 24 18 q-4 -14 -24 -18z"/>
+              </g>
+              <g fill="#e2766d">
+                <circle cx="54" cy="72" r="1.6"/><circle cx="60" cy="76" r="1.6"/>
+                <circle cx="90" cy="62" r="1.6"/><circle cx="96" cy="66" r="1.6"/>
+                <circle cx="126" cy="53" r="1.6"/><circle cx="132" cy="57" r="1.6"/>
+              </g>
+            </svg>
+          </div>
+          <div class="body">
+            <h3>명란바게트 + 라떼</h3>
+            <p class="price">10,500원</p>
+            <p class="story-line">최근 맛본 명란바게트에 반해서 메뉴에 넣었어요.</p>
+            <p class="desc">한 끼로도 충분한 크기에 명란을 듬뿍. 비린내 없이 고소하고 부드러워요.</p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 우리 가게의 약속 -->
+  <section class="promise">
+    <div class="wrap">
+      <svg class="cookie" viewBox="0 0 64 64" filter="url(#pencil)" aria-hidden="true">
+        <circle cx="32" cy="32" r="26" fill="#d9a466" stroke="#8a6a52" stroke-width="2.5"/>
+        <g fill="#5b3f2c">
+          <circle cx="22" cy="24" r="3.5"/><circle cx="38" cy="20" r="3"/><circle cx="42" cy="36" r="3.5"/>
+          <circle cx="26" cy="40" r="3"/><circle cx="33" cy="30" r="2.5"/>
+        </g>
+      </svg>
+      <p class="label">우리 가게의 약속</p>
+      <h2>시끄러운 음악은 틀지 않아요</h2>
+      <p>모두가 편안하게 머물 수 있도록 조용하고 따뜻한 분위기를 지켜요.
+        대화 소리가 커지면 다정하게 부탁드리고, 작은 쿠키 하나를 함께 건네드려요.</p>
+      <p class="talk">"다른 손님들도 계셔서요~ 조금만 조용히 부탁드려요~"</p>
+    </div>
+  </section>
+
+  <!-- 소식받기 안내 -->
+  <section class="cta-strip">
+    <div class="wrap">
+      <p>따끈한 새 빵 소식, 제일 먼저 받아보실래요? 🍞</p>
+      <a href="subscribe.html" class="btn">소식받기</a>
+    </div>
+  </section>
+
+  <!-- 영업시간 -->
+  <section class="info" id="hours">
+    <div class="wrap">
+      <div>
+        <p class="label">언제든 들러주세요</p>
+        <h2>영업시간 · 오시는 길</h2>
+        <dl>
+          <dt>평일</dt><dd>08:00 – 22:00</dd>
+          <dt>주말</dt><dd>10:00 – 21:00</dd>
+          <dt>휴무</dt><dd>매주 월요일</dd>
+          <dt>주소</dt><dd>서울시 마포구 창가로 12, 1층</dd>
+          <dt>전화</dt><dd>02-123-4567</dd>
+          <dt>인스타그램</dt><dd>@changga_ohu</dd>
+          <dt>편의</dt><dd>와이파이 · 좌석별 콘센트</dd>
+        </dl>
+      </div>
+      <div class="note">
+        <h3>🥐 빵 나오는 시간</h3>
+        <ul class="bake-times">
+          <li><b>08:00</b><span>아침 식사빵 (치아바타, 캄파뉴)</span></li>
+          <li><b>12:00</b><span>점심 빵 (명란바게트, 소금빵)</span></li>
+          <li><b>16:00</b><span>오후 간식빵 (쿠키, 소금빵)</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      <span>© 창가의 오후 · hello@changga-ohu.kr</span>
+      <nav class="footer-nav">
+        <a href="index.html">첫 화면</a>
+        <a href="menu.html">메뉴판</a>
+        <a href="subscribe.html">소식받기</a>
+      </nav>
+    </div>
+  </footer>
+
+</body>
+</html>

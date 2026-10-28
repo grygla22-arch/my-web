@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>메뉴판 | 창가의 오후</title>
+  <meta name="description" content="사장님이 직접 먹고 반한 빵만 굽는 창가의 오후 전체 메뉴판.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Gowun+Dodum&family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="theme.js"></script>
+</head>
+<body>
+
+  <!-- 색연필 질감 -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <filter id="pencil">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="2.2"/>
+    </filter>
+  </svg>
+
+  <header>
+    <div class="wrap">
+      <a href="index.html" class="logo">창가의 <span>오후</span></a>
+      <div class="header-right">
+        <nav>
+          <a href="index.html">첫 화면</a>
+          <a href="menu.html" class="current">메뉴판</a>
+          <a href="subscribe.html">소식받기</a>
+        </nav>
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="다크 모드로 바꾸기">🌙</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- 페이지 제목 -->
+  <section class="page-head">
+    <div class="wrap">
+      <a href="index.html" class="back-link">← 첫 화면으로</a>
+      <p class="label">사장님이 직접 먹고 반한 빵만 굽습니다</p>
+      <h1>메뉴판</h1>
+      <p class="lead">재료는 아끼지 않고, 가격은 부담 없이.</p>
+    </div>
+  </section>
+
+  <!-- 대표 메뉴 3가지 -->
+  <section style="padding-top: 24px;">
+    <div class="wrap">
+      <p class="label">대표 메뉴</p>
+      <h2>창가의 오후를 만든 세 가지</h2>
+
+      <div class="featured">
+
+        <article class="feature">
+          <div class="art photo">
+            <img src="images/olive-ciabatta.jpg" alt="따뜻하게 데운 올리브 치아바타" loading="lazy">
+            <span class="no">No.1</span>
+            <svg class="sticker" viewBox="0 0 190 140" filter="url(#pencil)" aria-hidden="true">
+              <ellipse cx="95" cy="112" rx="78" ry="10" fill="#efe2cb"/>
+              <path d="M24 92 q-6 -46 40 -50 h62 q46 4 40 50 q-2 14 -20 14 h-102 q-18 0 -20 -14z" fill="#e2b77a" stroke="#8a6a52" stroke-width="2.5"/>
+              <path d="M44 56 q30 -8 60 2 M84 50 q30 -6 58 6" stroke="#f3dbb0" stroke-width="3" fill="none"/>
+              <g fill="#6e7a3c">
+                <ellipse cx="52" cy="76" rx="6" ry="4.5"/><ellipse cx="78" cy="88" rx="6" ry="4.5"/>
+                <ellipse cx="100" cy="70" rx="6" ry="4.5"/><ellipse cx="126" cy="86" rx="6" ry="4.5"/>
+                <ellipse cx="146" cy="72" rx="6" ry="4.5"/><ellipse cx="66" cy="98" rx="5" ry="4"/>
+                <ellipse cx="112" cy="98" rx="5" ry="4"/>
+              </g>
+              <path d="M70 34 q4 -8 0 -16 M95 32 q4 -8 0 -16 M120 34 q4 -8 0 -16" stroke="#c8925a" stroke-width="2" fill="none"/>
+            </svg>
+          </div>
+          <div class="body">
+            <h3>올리브 치아바타</h3>
+            <p class="price">4,500원</p>
+            <blockquote>
+              치아바타 같은 식사빵은 원래 별로였어요.<br>
+              그런데 어느 빵집의 올리브 치아바타는 배가 불렀는데도 한 개를 넘게 먹었어요.
+              그날 기분을 잊을 수 없어서 우리 가게의 첫 번째 빵이 되었어요.
+            </blockquote>
+            <ul>
+              <li>겉은 바삭, 속은 쫄깃하고 촉촉하게</li>
+              <li>올리브를 정말 많이 넣었어요</li>
+              <li>따뜻하게 데워 드려서 올리브 향이 확 올라와요</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="feature">
+          <div class="art photo">
+            <img src="images/french-toast.jpg" alt="메이플 시럽과 딸기를 올린 프렌치토스트와 아이스 아메리카노" loading="lazy">
+            <span class="no">No.2</span>
+            <svg class="sticker" viewBox="0 0 190 140" filter="url(#pencil)" aria-hidden="true">
+              <ellipse cx="95" cy="114" rx="76" ry="12" fill="#fffaf1" stroke="#d8c6a8" stroke-width="2"/>
+              <rect x="42" y="66" width="86" height="40" rx="10" fill="#e8b46e" stroke="#8a6a52" stroke-width="2.5"/>
+              <rect x="62" y="48" width="86" height="40" rx="10" fill="#f0c482" stroke="#8a6a52" stroke-width="2.5"/>
+              <path d="M70 52 q30 14 70 0 q-4 22 -10 30" fill="#b9732f" opacity="0.55"/>
+              <path d="M96 40 q8 -14 18 -2 q-2 12 -9 14 q-8 -2 -9 -12z" fill="#c9605a" stroke="#8a6a52" stroke-width="1.8"/>
+              <path d="M104 30 l-2 -7 M104 30 l6 -5" stroke="#6e7a3c" stroke-width="2.5"/>
+              <circle cx="128" cy="44" r="7" fill="#c9605a" stroke="#8a6a52" stroke-width="1.6"/>
+              <circle cx="80" cy="46" r="6" fill="#7a5aa6" stroke="#8a6a52" stroke-width="1.6"/>
+            </svg>
+          </div>
+          <div class="body">
+            <h3>프렌치토스트 + 아메리카노 세트</h3>
+            <p class="price">9,900원</p>
+            <blockquote>
+              특별한 사연은 없어요.<br>
+              그냥 이 가격에 이렇게 맛있어서, 가장 많이 사랑받는 세트가 됐어요.
+            </blockquote>
+            <ul>
+              <li>두툼하고 부드러운 프렌치토스트</li>
+              <li>메이플 시럽과 딸기, 제철 과일을 올려요</li>
+              <li>깔끔한 아메리카노 (HOT / ICE 선택)</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="feature">
+          <div class="art photo">
+            <img src="images/mentaiko-baguette.jpg" alt="명란을 듬뿍 올린 명란바게트와 라떼" loading="lazy">
+            <span class="no">No.3</span>
+            <svg class="sticker" viewBox="0 0 190 140" filter="url(#pencil)" aria-hidden="true">
+              <ellipse cx="95" cy="110" rx="80" ry="10" fill="#efe2cb"/>
+              <path d="M18 88 q-6 -22 22 -32 l110 -26 q30 -4 30 18 q0 18 -22 26 l-112 30 q-24 6 -28 -16z" fill="#dca866" stroke="#8a6a52" stroke-width="2.5"/>
+              <g stroke="#8a6a52" stroke-width="2" fill="#f1a39a">
+                <path d="M44 64 q10 18 24 18 q-4 -14 -24 -18z"/>
+                <path d="M80 54 q10 18 24 18 q-4 -14 -24 -18z"/>
+                <path d="M116 45 q10 18 24 18 q-4 -14 -24 -18z"/>
+              </g>
+              <g fill="#e2766d">
+                <circle cx="54" cy="72" r="1.6"/><circle cx="60" cy="76" r="1.6"/>
+                <circle cx="90" cy="62" r="1.6"/><circle cx="96" cy="66" r="1.6"/>
+                <circle cx="126" cy="53" r="1.6"/><circle cx="132" cy="57" r="1.6"/>
+              </g>
+            </svg>
+          </div>
+          <div class="body">
+            <h3>명란바게트 + 라떼 세트</h3>
+            <p class="price">10,500원</p>
+            <blockquote>
+              최근에 아주 잘 만든 명란바게트를 먹고 반했어요.<br>
+              그 맛을 우리 가게에서도 드리고 싶었어요.
+            </blockquote>
+            <ul>
+              <li>한 끼로도 충분한 넉넉한 크기</li>
+              <li>명란을 아낌없이 듬뿍</li>
+              <li>비린내 하나 없이 고소하고 부드럽게</li>
+            </ul>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 사장님 추천 조합 -->
+  <section class="combos">
+    <div class="wrap">
+      <p class="label">고민될 땐 이렇게</p>
+      <h2>사장님 추천 조합</h2>
+      <p class="intro">언제, 어떤 기분으로 오셨는지에 맞춰 골라봤어요.</p>
+
+      <div class="combo-grid">
+        <div class="combo best">
+          <span class="badge">단골 픽</span>
+          <h3>창가 단골 세트</h3>
+          <p class="items">올리브 치아바타 + 따뜻한 라떼</p>
+          <p class="for">퇴근 후 할 일을 마무리하고 싶은 날</p>
+          <p class="cprice">9,500원</p>
+        </div>
+        <div class="combo">
+          <h3>아침 식사빵 세트</h3>
+          <p class="items">무화과 캄파뉴 + 아메리카노</p>
+          <p class="for">출근 전, 든든한 한 끼가 필요할 때</p>
+          <p class="cprice"><s>9,500원</s>8,900원</p>
+        </div>
+        <div class="combo">
+          <h3>둘이 나눠 먹기</h3>
+          <p class="items">프렌치토스트 세트 + 얼그레이 밀크티</p>
+          <p class="for">주말 오후, 둘이서 천천히</p>
+          <p class="cprice"><s>15,400원</s>14,500원</p>
+        </div>
+        <div class="combo">
+          <h3>입이 심심할 때</h3>
+          <p class="items">버터 소금빵 + 초코칩 쿠키 + 아메리카노</p>
+          <p class="for">오후에 출출할 때 딱 좋은 간식</p>
+          <p class="cprice"><s>10,000원</s>9,000원</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 나머지 메뉴: 가격표 -->
+  <section>
+    <div class="wrap">
+      <p class="label">그 외 메뉴</p>
+      <h2>가격표</h2>
+
+      <div class="price-board">
+        <div class="price-group">
+          <img class="thumb" src="images/salt-bread.jpg" alt="갓 구운 버터 소금빵과 식사빵" loading="lazy">
+          <h3>🥖 빵</h3>
+          <ul class="price-list">
+            <li>
+              <span class="name">버터 소금빵<span class="sub">겉은 바삭, 버터 향 가득</span></span>
+              <span class="dots"></span><span class="p">3,500원</span>
+            </li>
+            <li>
+              <span class="name">무화과 캄파뉴<span class="sub">무화과를 아낌없이 넣은 식사빵</span></span>
+              <span class="dots"></span><span class="p">5,500원</span>
+            </li>
+            <li>
+              <span class="name">초코칩 쿠키<span class="sub">가게에서 건네드리는 바로 그 쿠키</span></span>
+              <span class="dots"></span><span class="p">2,500원</span>
+            </li>
+          </ul>
+        </div>
+        <div class="price-group">
+          <div class="thumb-pair">
+            <img class="thumb" src="images/hand-drip.jpg" alt="도자기 잔에 내려지는 커피" loading="lazy">
+            <img class="thumb" src="images/cold-brew.jpg" alt="부드러운 크림을 올린 크림 콜드브루" loading="lazy">
+          </div>
+          <h3>☕ 음료</h3>
+          <ul class="price-list">
+            <li>
+              <span class="name">아메리카노<span class="sub">HOT / ICE, 깔끔한 맛</span></span>
+              <span class="dots"></span><span class="p">4,000원</span>
+            </li>
+            <li>
+              <span class="name">라떼<span class="sub">단골이 늘 시키는 따뜻한 한 잔</span></span>
+              <span class="dots"></span><span class="p">5,000원</span>
+            </li>
+            <li>
+              <span class="name">크림 콜드브루 <span class="new-tag">NEW</span><span class="sub">천천히 우린 콜드브루에 부드러운 크림을 얹었어요</span></span>
+              <span class="dots"></span><span class="p">5,500원</span>
+            </li>
+            <li>
+              <span class="name">얼그레이 밀크티<span class="sub">커피 대신 부드러운 한 잔</span></span>
+              <span class="dots"></span><span class="p">5,500원</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <p class="price-note">빵 나오는 시간: 08:00 · 12:00 · 16:00 &nbsp;|&nbsp; 인기 빵은 일찍 품절될 수 있어요</p>
+    </div>
+  </section>
+
+  <!-- 첫 화면으로 -->
+  <section class="page-end promise">
+    <div class="wrap">
+      <p>오늘은 어떤 빵이 끌리세요?</p>
+      <a href="index.html" class="btn">← 첫 화면으로 돌아가기</a>
+      <a href="subscribe.html" class="btn ghost">새 빵 소식받기</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      <span>© 창가의 오후 · hello@changga-ohu.kr</span>
+      <nav class="footer-nav">
+        <a href="index.html">첫 화면</a>
+        <a href="menu.html">메뉴판</a>
+        <a href="subscribe.html">소식받기</a>
+      </nav>
+    </div>
+  </footer>
+
+</body>
+</html>

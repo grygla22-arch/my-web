@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>소식받기 | 창가의 오후</title>
+  <meta name="description" content="창가의 오후의 새 빵, 베이킹 클래스, 이벤트 소식을 가장 먼저 받아보세요.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Gowun+Dodum&family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="theme.js"></script>
+</head>
+<body>
+
+  <header>
+    <div class="wrap">
+      <a href="index.html" class="logo">창가의 <span>오후</span></a>
+      <div class="header-right">
+        <nav>
+          <a href="index.html">첫 화면</a>
+          <a href="menu.html">메뉴판</a>
+          <a href="subscribe.html" class="current">소식받기</a>
+        </nav>
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="다크 모드로 바꾸기">🌙</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- 페이지 제목 -->
+  <section class="page-head">
+    <div class="wrap">
+      <a href="index.html" class="back-link">← 첫 화면으로</a>
+      <p class="label">창가에서 보내는 편지</p>
+      <h1>소식받기</h1>
+      <p class="lead">따끈한 새 빵 소식, 제일 먼저 받아보실래요?</p>
+    </div>
+  </section>
+
+  <!-- 사장님 인사 -->
+  <section style="padding-top: 16px; padding-bottom: 56px;">
+    <div class="wrap">
+      <div class="letter">
+        <img class="letter-photo" src="images/interior.jpg" alt="오후 햇살이 드는 창가 원목 테이블 위의 커피 한 잔">
+        안녕하세요~ 창가의 오후 사장이에요 😊<br>
+        새 빵이 나오거나, 빵을 조금 더 저렴하게 드릴 수 있는 날이면
+        제일 먼저 생각나는 게 우리 단골님들이에요.<br>
+        그래서 소식을 살짝 전해드리려고 해요.
+        자주 보내지 않을게요, 진짜 반가운 소식만 골라서요! 🍞
+        <p class="sign">창가의 오후 사장 드림</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 이런 소식을 보내드려요 -->
+  <section style="padding-top: 0;">
+    <div class="wrap">
+      <p class="label">이런 소식을 보내드려요</p>
+      <h2>세 가지 반가운 소식</h2>
+
+      <div class="news-grid">
+        <article class="news">
+          <div class="emoji">🥐</div>
+          <h3>신메뉴</h3>
+          <p class="desc">제가 먹어보고 반한 빵만 메뉴로 만들어요. 새 빵이 나오는 날, 제일 먼저 알려드려요.</p>
+          <p class="bubble">안녕하세요~ 오늘 따끈한 새 빵이 나왔어요! 올리브X치아바타! 꼭 한번 맛보아주세요~</p>
+        </article>
+        <article class="news">
+          <div class="emoji">👩‍🍳</div>
+          <h3>베이킹 클래스</h3>
+          <p class="desc">매달 마지막 일요일, 문 열기 전 아침 8시에 딱 6분만 모여 올리브 치아바타를 함께 구워요.</p>
+          <p class="bubble">이번 달 클래스 자리 열렸어요🙌 조용한 아침에 같이 빵 구워요, 6자리뿐이에요!</p>
+        </article>
+        <article class="news">
+          <div class="emoji">🎁</div>
+          <h3>이벤트 · 할인</h3>
+          <p class="desc">마감 시간 빵 할인부터 단골님들을 위한 작은 이벤트까지 챙겨드려요.</p>
+          <p class="bubble">오늘 저녁 7시부터 남은 빵 전부 20% 할인이에요🥐 퇴근길에 들러주세요~ 빵들이 기다리고 있어요!</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 신청하기 -->
+  <section class="signup" id="signup">
+    <div class="wrap">
+      <div class="signup-box">
+        <p class="label">이름이랑 이메일만 있으면 돼요</p>
+        <h2>소식받기 신청</h2>
+        <p class="intro">새 빵, 클래스, 이벤트 소식을 살짝 전해드릴게요 🍞</p>
+
+        <form id="subscribeForm" novalidate>
+          <label>이름
+            <input type="text" id="name" name="name" placeholder="홍길동" autocomplete="name">
+          </label>
+          <label>이메일
+            <input type="email" id="email" name="email" placeholder="hello@example.com" autocomplete="email">
+          </label>
+          <div class="consent">
+            <label class="consent-check">
+              <input type="checkbox" id="agree" name="agree">
+              <span>(필수) 개인정보 수집·이용에 동의합니다</span>
+            </label>
+            <ul class="consent-detail">
+              <li>수집 항목: 이름, 이메일</li>
+              <li>이용 목적: 새 빵 · 클래스 · 이벤트 소식 발송</li>
+              <li>보유 기간: 구독 해지 시까지</li>
+              <li>동의하지 않으실 수 있지만, 그러면 소식을 보내드릴 수 없어요.</li>
+            </ul>
+          </div>
+          <p class="form-error" id="formError" role="alert"></p>
+          <button type="submit" class="btn" id="submitBtn" disabled>소식받기 신청할게요</button>
+        </form>
+
+        <div class="thanks" id="thanks" role="status">
+          <div class="big">💛</div>
+          <h3 id="thanksTitle">신청 고마워요!</h3>
+          <p>
+            따끈한 새 빵 나오면 제일 먼저 알려드릴게요!<br>
+            다음에 창가 자리에서 만나요~ 🥐
+          </p>
+          <a href="menu.html" class="btn">오늘의 메뉴 구경하기</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 다른 페이지로 -->
+  <section class="page-end promise">
+    <div class="wrap">
+      <p>오늘은 어떤 빵이 끌리세요?</p>
+      <a href="index.html" class="btn">← 첫 화면으로 돌아가기</a>
+      <a href="menu.html" class="btn ghost">메뉴판 보기</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      <span>© 창가의 오후 · hello@changga-ohu.kr</span>
+      <nav class="footer-nav">
+        <a href="index.html">첫 화면</a>
+        <a href="menu.html">메뉴판</a>
+        <a href="subscribe.html">소식받기</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+    // 신청 버튼을 누르면 입력을 확인하고, 사장님 말투로 감사 인사를 보여줘요
+    var form = document.getElementById("subscribeForm");
+    var nameInput = document.getElementById("name");
+    var emailInput = document.getElementById("email");
+    var error = document.getElementById("formError");
+    var thanks = document.getElementById("thanks");
+    var thanksTitle = document.getElementById("thanksTitle");
+    var agree = document.getElementById("agree");
+    var submitBtn = document.getElementById("submitBtn");
+
+    // 개인정보 동의에 체크해야 신청 버튼이 켜져요
+    agree.addEventListener("change", function () {
+      submitBtn.disabled = !agree.checked;
+    });
+    // 뒤로가기 등으로 체크가 남아 있을 때도 버튼 상태를 맞춰요
+    submitBtn.disabled = !agree.checked;
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      var name = nameInput.value.trim();
+      var email = emailInput.value.trim();
+
+      if (!agree.checked) return;
+
+      if (!name) {
+        error.textContent = "앗, 이름을 알려주시면 더 반갑게 인사드릴 수 있어요 😊";
+        nameInput.focus();
+        return;
+      }
+      if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+        error.textContent = "이메일 주소를 한 번만 더 확인해 주세요~ 🙏";
+        emailInput.focus();
+        return;
+      }
+
+      error.textContent = "";
+      thanksTitle.textContent = name + "님, 소식받기 신청 고마워요!";
+      form.style.display = "none";
+      thanks.classList.add("show");
+    });
+  </script>
+</body>
+</html>
